@@ -5,7 +5,6 @@ import "./styles.css";
 
 function Placar(props) {
   const [placar, setPlacar] = useState(props.placar || 0);
-  const [nomeTime, setNomeTime] = useState(props.nomeTime || "");
 
   const incPLacar = () => {
     setPlacar(placar + 1);
@@ -23,19 +22,11 @@ function Placar(props) {
 }
 
 function App() {
-  const [a, setA] = useState(0);
-  const [b, setB] = useState(0);
-
-  const ini = () => {
-    setA(0);
-    setB(0);
-  };
-
   return (
     <div className="App">
       <h1>Placar da partida</h1>
-      <Placar placar={a} nomeTime="Time A" cor="#F00" />
-      <Placar placar={b} nomeTime="Time B" cor="#00F" />
+      <Placar placar={0} nomeTime="Time A" />
+      <Placar placar={0} nomeTime="Time B" />
       <div>
         <b>by LuisNt@gmail.com</b>
       </div>
