@@ -31,7 +31,7 @@ function App() {
       <b className="x">x</b>
       <Placar placar={0} nomeTime="Time B" />
       <div>
-        <b>by LuisNt@gmail.com</b>
+        <b className="y"> by LuisNt@gmail.com</b>
       </div>
     </div>
   );
