@@ -13,7 +13,9 @@ function Placar(props) {
   return (
     <div className="Placar">
       <h2>{props.nomeTime}</h2>
-      <div>{placar}</div>
+      <div>
+        <h1>{placar}</h1>
+      </div>
       <button className="inc" onClick={incPLacar}>
         Marcar
       </button>
@@ -26,7 +28,7 @@ function App() {
     <div className="App">
       <h1>Placar da partida</h1>
       <Placar placar={0} nomeTime="Time A" />
-      <b>x</b>
+      <b className="x">x</b>
       <Placar placar={0} nomeTime="Time B" />
       <div>
         <b>by LuisNt@gmail.com</b>

@@ -8,7 +8,7 @@ button {
   color: #fff;
   padding: 5px;
   width: 75px;
-  margin: 10px;
+  margin: 0px;
   border-radius: 15px;
   border: none;
 }
@@ -18,6 +18,18 @@ button {
   display: inline-block;
   flex: inline-block;
 }
+
+.x {
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 700%;
+  margin: -28px;
+  margin-top: 14px;
+  position: absolute;
+  color: darkgray;
+}
+
 .inc {
   background-color: #0f3ed8;
 }
