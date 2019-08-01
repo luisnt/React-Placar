@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+button {
+  background-color: #7856c1;
+  color: #fff;
+  padding: 5px;
+  width: 75px;
+  margin: 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+.inc {
+  background-color: #0f3ed8;
+}
+
+.dec {
+  background-color: #d80f0f;
+}
