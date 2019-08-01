@@ -36,6 +36,9 @@ function App() {
       <h1>Placar da partida</h1>
       <Placar placar={a} nomeTime="Time A" cor="#F00" />
       <Placar placar={b} nomeTime="Time B" cor="#00F" />
+      <div>
+        <b>by LuisNt@gmail.com</b>
+      </div>
     </div>
   );
 }
