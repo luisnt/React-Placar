@@ -13,6 +13,11 @@ button {
   border: none;
 }
 
+.Placar {
+  width: 30%;
+  display: inline-block;
+  flex: inline-block;
+}
 .inc {
   background-color: #0f3ed8;
 }

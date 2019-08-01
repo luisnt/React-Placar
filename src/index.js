@@ -3,36 +3,39 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-function Contador(props) {
-  return props.i + 1;
+function Placar(props) {
+  const [placar, setPlacar] = useState(props.placar || 0);
+  const [nomeTime, setNomeTime] = useState(props.nomeTime || "");
+
+  const incPLacar = () => {
+    setPlacar(placar + 1);
+  };
+
+  return (
+    <div className="Placar">
+      <h2>{props.nomeTime}</h2>
+      <div>{placar}</div>
+      <button className="inc" onClick={incPLacar}>
+        Marcar
+      </button>
+    </div>
+  );
 }
 
 function App() {
-  const [i, setI] = useState(1);
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
 
-  const inc = () => {
-    setI(i + 1);
-  };
-
-  const dec = () => {
-    setI(i - 1);
+  const ini = () => {
+    setA(0);
+    setB(0);
   };
 
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <button className="inc" onClick={inc}>
-        {" "}
-        Add{" "}
-      </button>
-      <div>
-        <Contador i={i} />
-      </div>
-      <button className="dec" onClick={dec}>
-        {" "}
-        Del{" "}
-      </button>
+      <h1>Placar da partida</h1>
+      <Placar placar={a} nomeTime="Time A" cor="#F00" />
+      <Placar placar={b} nomeTime="Time B" cor="#00F" />
     </div>
   );
 }
