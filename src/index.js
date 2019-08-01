@@ -26,6 +26,7 @@ function App() {
     <div className="App">
       <h1>Placar da partida</h1>
       <Placar placar={0} nomeTime="Time A" />
+      <b>x</b>
       <Placar placar={0} nomeTime="Time B" />
       <div>
         <b>by LuisNt@gmail.com</b>
